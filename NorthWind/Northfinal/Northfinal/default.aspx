@@ -10,7 +10,8 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="ddlcountries" DataTextField="Country" DataValueField="Country">
+            <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="countries" DataTextField="Country" DataValueField="Country" AppendDataBoundItems="True" AutoPostBack="True">
+            <asp:ListItem Value="" Text="Please select a country" />
             </asp:DropDownList>
             <asp:SqlDataSource ID="countries" runat="server" ConnectionString="<%$ ConnectionStrings:NORTHWNDConnectionString %>" SelectCommand="SELECT DISTINCT [Country] FROM [Customers]"></asp:SqlDataSource>
         </div>
@@ -23,9 +24,43 @@
                 <asp:BoundField DataField="Address" HeaderText="Address" SortExpression="Address" />
             </Columns>
         </asp:GridView>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:NORTHWNDConnectionString %>" DeleteCommand="DELETE FROM [Customers] WHERE [CustomerID] = @CustomerID" InsertCommand="INSERT INTO [Customers] ([CustomerID], [CompanyName], [ContactName], [ContactTitle], [Address], [City], [Region], [PostalCode], [Country], [Phone], [Fax]) VALUES (@CustomerID, @CompanyName, @ContactName, @ContactTitle, @Address, @City, @Region, @PostalCode, @Country, @Phone, @Fax)" SelectCommand="SELECT [CustomerID], [CompanyName], [ContactName], [ContactTitle], [Address], [City], [Region], [PostalCode], [Country], [Phone], [Fax] FROM [Customers] WHERE ([Country] = @Country)" UpdateCommand="UPDATE [Customers] SET [CompanyName] = @CompanyName, [ContactName] = @ContactName, [ContactTitle] = @ContactTitle, [Address] = @Address, [City] = @City, [Region] = @Region, [PostalCode] = @PostalCode, [Country] = @Country, [Phone] = @Phone, [Fax] = @Fax WHERE [CustomerID] = @CustomerID">
+            <DeleteParameters>
+                <asp:Parameter Name="CustomerID" Type="String" />
+            </DeleteParameters>
+            <InsertParameters>
+                <asp:Parameter Name="CustomerID" Type="String" />
+                <asp:Parameter Name="CompanyName" Type="String" />
+                <asp:Parameter Name="ContactName" Type="String" />
+                <asp:Parameter Name="ContactTitle" Type="String" />
+                <asp:Parameter Name="Address" Type="String" />
+                <asp:Parameter Name="City" Type="String" />
+                <asp:Parameter Name="Region" Type="String" />
+                <asp:Parameter Name="PostalCode" Type="String" />
+                <asp:Parameter Name="Country" Type="String" />
+                <asp:Parameter Name="Phone" Type="String" />
+                <asp:Parameter Name="Fax" Type="String" />
+            </InsertParameters>
+            <SelectParameters>
+                <asp:ControlParameter ControlID="DropDownList1" DefaultValue="NULL" Name="Country" PropertyName="SelectedValue" Type="String" />
+            </SelectParameters>
+            <UpdateParameters>
+                <asp:Parameter Name="CompanyName" Type="String" />
+                <asp:Parameter Name="ContactName" Type="String" />
+                <asp:Parameter Name="ContactTitle" Type="String" />
+                <asp:Parameter Name="Address" Type="String" />
+                <asp:Parameter Name="City" Type="String" />
+                <asp:Parameter Name="Region" Type="String" />
+                <asp:Parameter Name="PostalCode" Type="String" />
+                <asp:Parameter Name="Country" Type="String" />
+                <asp:Parameter Name="Phone" Type="String" />
+                <asp:Parameter Name="Fax" Type="String" />
+                <asp:Parameter Name="CustomerID" Type="String" />
+            </UpdateParameters>
+        </asp:SqlDataSource>
         <asp:SqlDataSource ID="AllCustomers" runat="server" ConnectionString="<%$ ConnectionStrings:NORTHWNDConnectionString %>" SelectCommand="SELECT [CustomerID], [ContactName], [ContactTitle], [Address] FROM [Customers] WHERE ([Country] = @Country)">
             <SelectParameters>
-                <asp:ControlParameter ControlID="GridView1" DefaultValue="NULL" Name="Country" PropertyName="SelectedValue" Type="String" />
+                <asp:ControlParameter ControlID="DropDownList1" DefaultValue="NULL" Name="Country" PropertyName="SelectedValue" Type="String" />
             </SelectParameters>
         </asp:SqlDataSource>
         <asp:DetailsView ID="cdv" runat="server" AutoGenerateRows="False" CellPadding="4" DataKeyNames="CustomerID" DataSourceID="customerSql" ForeColor="#333333" GridLines="None" Height="50px" Width="125px">
@@ -53,7 +88,7 @@
         </asp:DetailsView>
         <asp:SqlDataSource ID="customerSql" runat="server" ConnectionString="<%$ ConnectionStrings:NORTHWNDConnectionString %>" SelectCommand="SELECT * FROM [Customers] WHERE ([CustomerID] = @CustomerID)">
             <SelectParameters>
-                <asp:ControlParameter ControlID="cdv" Name="CustomerID" PropertyName="SelectedValue" Type="String" />
+                <asp:ControlParameter ControlID="GridView1" Name="CustomerID" PropertyName="SelectedValue" Type="String" DefaultValue="NULL" />
             </SelectParameters>
         </asp:SqlDataSource>
     </form>
