@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Security;
 using System.Web.SessionState;
+using System.Data.Entity;
+using timetracker.Models;
 
 namespace timetracker
 {
@@ -11,6 +13,9 @@ namespace timetracker
     {
         protected void Application_Start(object sender, EventArgs e)
         {
+
+            Database.SetInitializer(new TimeTrackerDbContextInitializer());
+
         }
     }
 }

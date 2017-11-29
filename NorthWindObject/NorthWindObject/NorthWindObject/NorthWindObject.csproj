@@ -72,9 +72,9 @@
       <LastGenOutput>Northwind.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Data\Northwind.dbml.layout">
+    <None Include="Data\Northwind.dbml.layout">
       <DependentUpon>Northwind.dbml</DependentUpon>
-    </Content>
+    </None>
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -61,7 +61,7 @@
         <p>
             Customers Orders</p>
         <p>
-            <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataSourceID="orders">
+            <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataSourceID="orders" Width="393px">
                 <Columns>
                     <asp:BoundField DataField="OrderID" HeaderText="OrderID" InsertVisible="False" ReadOnly="True" SortExpression="OrderID" />
                     <asp:BoundField DataField="OrderDate" HeaderText="OrderDate" SortExpression="OrderDate" />

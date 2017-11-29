@@ -6,7 +6,7 @@ using System.Data.Entity;
 
 namespace timetracker.Models
 {
-    public class TimeTrackerDbContext
+    public class TimeTrackerDbContext : DbContext
     {
         public  DbSet<Employee> Employees { get; set; }
         public  DbSet<TimeCard> TimeCards { get; set; }
