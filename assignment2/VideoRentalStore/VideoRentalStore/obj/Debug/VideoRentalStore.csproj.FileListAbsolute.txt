@@ -11,3 +11,7 @@ D:\IPD-10\ASP.DotNet_Aref\assignment2\VideoRentalStore\VideoRentalStore\obj\Debu
 D:\IPD-10\ASP.DotNet_Aref\assignment2\VideoRentalStore\VideoRentalStore\obj\Debug\VideoRentalStore.csproj.CoreCompileInputs.cache
 D:\IPD-10\ASP.DotNet_Aref\assignment2\VideoRentalStore\VideoRentalStore\obj\Debug\VideoRentalStore.dll
 D:\IPD-10\ASP.DotNet_Aref\assignment2\VideoRentalStore\VideoRentalStore\obj\Debug\VideoRentalStore.pdb
+C:\Users\1795643\source\ASP DotNet\assignment2\VideoRentalStore\VideoRentalStore\obj\Debug\VideoRentalStore.csprojResolveAssemblyReference.cache
+C:\Users\1795643\source\ASP DotNet\assignment2\VideoRentalStore\VideoRentalStore\obj\Debug\VideoRentalStore.csproj.CoreCompileInputs.cache
+C:\Users\1795643\source\ASP DotNet\assignment2\VideoRentalStore\VideoRentalStore\obj\Debug\VideoRentalStore.dll
+C:\Users\1795643\source\ASP DotNet\assignment2\VideoRentalStore\VideoRentalStore\obj\Debug\VideoRentalStore.pdb
