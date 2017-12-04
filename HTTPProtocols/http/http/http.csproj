@@ -78,6 +78,7 @@
     <Content Include="ASPControlValue.aspx" />
     <Content Include="Global.asax" />
     <Content Include="HTTPStateless.aspx" />
+    <Content Include="HyperLink - Copy.aspx" />
     <Content Include="HyperLink.aspx" />
     <Content Include="SessionApp.aspx" />
     <Content Include="StateVariable.aspx" />
@@ -100,6 +101,13 @@
     </Compile>
     <Compile Include="HTTPStateless.aspx.designer.cs">
       <DependentUpon>HTTPStateless.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HyperLink - Copy.aspx.cs">
+      <DependentUpon>HyperLink - Copy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HyperLink - Copy.aspx.designer.cs">
+      <DependentUpon>HyperLink - Copy.aspx</DependentUpon>
     </Compile>
     <Compile Include="HyperLink.aspx.cs">
       <DependentUpon>HyperLink.aspx</DependentUpon>

@@ -1,0 +1,13 @@
+D:\IPD-10\ASP.DotNet_Aref\assignment2\VideoRentalStore\VideoRentalStore\bin\VideoRentalStore.dll.config
+D:\IPD-10\ASP.DotNet_Aref\assignment2\VideoRentalStore\VideoRentalStore\bin\VideoRentalStore.dll
+D:\IPD-10\ASP.DotNet_Aref\assignment2\VideoRentalStore\VideoRentalStore\bin\VideoRentalStore.pdb
+D:\IPD-10\ASP.DotNet_Aref\assignment2\VideoRentalStore\VideoRentalStore\bin\EntityFramework.dll
+D:\IPD-10\ASP.DotNet_Aref\assignment2\VideoRentalStore\VideoRentalStore\bin\EntityFramework.SqlServer.dll
+D:\IPD-10\ASP.DotNet_Aref\assignment2\VideoRentalStore\VideoRentalStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\IPD-10\ASP.DotNet_Aref\assignment2\VideoRentalStore\VideoRentalStore\bin\EntityFramework.xml
+D:\IPD-10\ASP.DotNet_Aref\assignment2\VideoRentalStore\VideoRentalStore\bin\EntityFramework.SqlServer.xml
+D:\IPD-10\ASP.DotNet_Aref\assignment2\VideoRentalStore\VideoRentalStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\IPD-10\ASP.DotNet_Aref\assignment2\VideoRentalStore\VideoRentalStore\obj\Debug\VideoRentalStore.csprojResolveAssemblyReference.cache
+D:\IPD-10\ASP.DotNet_Aref\assignment2\VideoRentalStore\VideoRentalStore\obj\Debug\VideoRentalStore.csproj.CoreCompileInputs.cache
+D:\IPD-10\ASP.DotNet_Aref\assignment2\VideoRentalStore\VideoRentalStore\obj\Debug\VideoRentalStore.dll
+D:\IPD-10\ASP.DotNet_Aref\assignment2\VideoRentalStore\VideoRentalStore\obj\Debug\VideoRentalStore.pdb
