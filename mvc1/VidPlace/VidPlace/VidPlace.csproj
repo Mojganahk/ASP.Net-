@@ -270,6 +270,7 @@
     <Content Include="Views\Test\GetDeveloper.cshtml" />
     <Content Include="Views\Media\Random.cshtml" />
     <Content Include="Views\Customer\Customer.cshtml" />
+    <Content Include="Views\Media\released.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
